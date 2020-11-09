@@ -1,0 +1,42 @@
+table {
+	position: relative;
+}
+
+table.loading:before {
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	display: block;
+	position: absolute;
+	top: 0;
+}
+
+th.sortable {
+	cursor: pointer;
+}
+
+th.asc:after,
+th.desc:after {
+	content: ' ';
+	position: relative;
+	left: 10px;
+	border: 7px solid transparent;
+}
+th.desc:after {
+	top: 10px;
+	border-top-color: silver;
+}
+th.asc:after {
+	bottom: 15px;
+	border-bottom-color: silver;
+}
+th.asc,
+th.desc {
+	padding-left: 20px;
+}
+
+input:disabled {
+	width: 50px;
+}
